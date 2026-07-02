@@ -1,0 +1,30 @@
+Numpy File	Class	Amplitude	Area	Subjammer	Position	Environment
+
+Numpy File: 	Numbers from 00000 to 42591
+Class:		0: None; 1: Noise; 2: Chirp; 3: FreqHopper; 4: Modulated; 5: Multitone; 6: Pulsed
+Amplitude:	-10 to 10
+Area:		0 to 3; Quater of the receiver
+Subjammer:	File used for Generator; Varying in Speed, bandwidth, etc
+Position:	0: None; 1-18: Various positions on the ground; 19-48: Various positions on the reling
+Environment:	0: None
+		1, 12: No obstruction
+		2: 1 absorber towards generator
+		3: 1 absorber towards receiver
+		4: 3 absorber around generator facing generator + 3 small absorber around antenna
+		5: 3 absorber around generator facing receiver
+		6: 4 absorber around generator facing receiver
+		7: 4 absorber around generator facing generator
+		8: 4 absorber around generator facing generator + 3 small absorber around antenna
+		9: 4 absorber builidng corridor between generator and receiver facing outwards
+		10:4 absorber linked as one big wall facing generator
+		11:3 small absorber around antenna
+splits/:	jammer: All files from position 1/environment 1
+		signal_to_noise: All files from position 18/environment 12
+		bandwidth: All files from position 1/18
+		environment: All files from position 1/18
+		environment_cross: One text file per environment
+dep.txt:	Each subjammer equally occours in train/val/test
+indep.txt:	The subjammers occouring in train are completely separated from those in val/test
+random.txt:	Random train/val/test split
+		For each train/val/test has 64/16/20% of the samples
+
