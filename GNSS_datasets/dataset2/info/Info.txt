@@ -1,0 +1,20 @@
+Numpy File	Class	Amplitude	Area	Subjammer	Position	Environment	Orientation	FIOT-Present-Flag
+
+Numpy File: 	Numbers from 00000 to 25690
+Class:		0: None; 1: Noise; 2: Chirp; 3: FreqHopper; 4: Modulated; 5: Multitone; 6: Pulsed
+Amplitude:	-50 to 10
+Area:		0 to 3; Quater of the receiver. Also included in the sample number after the underscore
+Subjammer:	File used for Generator; Varying in Speed, bandwidth, etc
+Position:	0: None; 1-17: Various positions on the ground
+Environment:	1:Line of sight
+Orientation:	0: Horizontal
+		1-3: Weak/middle/strong elevation left
+		4-6: Weak/middle/strong elevation right
+splits/:	jammer: All files from orientation 0
+		orientation: All files from orientations 1-6 and a small number of files from orientation 0
+		orientation_cross: One text file per orientation
+dep.txt:	Each subjammer equally occours in train/val/test
+indep.txt:	The subjammers occouring in train are completely separated from those in val/test
+random.txt:	Random train/val/test split
+		For each train/val/test has 64/16/20% of the samples
+
