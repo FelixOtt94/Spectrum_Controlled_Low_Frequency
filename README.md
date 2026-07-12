@@ -33,11 +33,12 @@ For more information on the dataset1, see:
 @inproceedings{heublein_feigl_dataset,
   author = {Lucas Heublein and Tobias Feigl and Thorsten Nowak and Alexander Rügamer and Christopher Mutschler and Felix Ott},
   title = {{Evaluating ML Robustness in GNSS Interference Classification, Characterization \& Localization}},
-  booktitle = {\href{https://arxiv.org/abs/2409.15114}{arXiv preprint arXiv:2409.15114}},
-  month = sep,
-  year = {2024}
+  booktitle = {\href{https://ieeexplore.ieee.org/document/11046126}{IEEE Intl. Conf. on Localization and GNSS (ICL-GNSS)}},
+  month = jun,
+  year = {2025},
+  address = {Rome, Italy},
+  doi = {10.1109/ICL-GNSS65520.2025.11046126}
 }
-
 ```
 
 For more information on the dataset2, see:
